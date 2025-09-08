@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css"
+  <title>Zainab's Qoute</title>
+</head>
+
+<body>
+  <header>
+    <button id="toggle">Dark/Light mode</button>
+    <h1>Welcome to Zainab's Qoute</h1>
+    <p>Inspirational,Motivational Qoutes</p>
+  </header>
+  <nav class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn" id="dropBtn">Menu</button>
+      <div class="dropMenu hidden" id="dropMenu">
+        <a href="#motiv">Motivational Qoutes</a>
+        <a href="#inspi">Inspirational Qoutes</a>
+        <a href="#faq">FQQ</a>
+        <a href="#registration">Subscribe</a>
+      </div>
+    </div>
+  </nav>
+  <main id="home">
+    <section class="motiv" id="motiv">
+      <h2>Motivational Qoutes</h2>
+      <P>Today is a good day to read your first motivational qoute.</P>
+      <button id="showMsgBtn">Click Me</button>
+      <p id="message" class="hidden">"Success doesn't come from what you do occasionally, It comes from what you do consistently."</p>
+    </section>
+    <section class="inspi" id="inspi">
+      <h2>Inspirational Qoutes</h2>
+      <p>You just finish reading motivational qoute right🙂,wait don't tell me you jumped to inspirational qoutes😂.</p>
+      <button id="showMsg2Btn">Another click me</button>
+      <p id="message2" class="hidden">"Your only limit is your mind."<br><br>For those who jumped straight here.<br><br>"Every journey worth taking begins at the beginning not the middle.Embrace the start it's where growth is born."</p>
+    </section>
+    <section class="sec-faq" id="faq">
+      <h2>FAQ✨</h2>
+      <div class="faq">
+        <button class="faq-question">What is Qoute</button>
+        <div class="faq-answer hidden">Qoute is a memorable phrase or sentence that people share to motivate,inspire,teach or reflect on something meaningful.</div>
+      </div>
+    </section>
+
+    <section class="registration" id="registration">
+      <h2 id="registration">Subscribe to Zainab's Qoute</h2>
+      <form class="registration-form" id="registration-form">
+        <div class="form">
+          <label for="name">Name:<input type="text" id="name"></label>
+          <small class="error" id="nameError"></small><br>
+          <label for="email">Email: <input type="email" id="email"></label>
+          <small class="error" id="emailError" ></small><br>
+          <label>Password: <input type="password" id="password"></label>
+          <small class="error" id="passwordError"></small><br>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>©2025 PLP Wk 6 <br> Let's have a loving day. </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
